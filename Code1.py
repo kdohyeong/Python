@@ -10,6 +10,8 @@ Life is too short
 You need python
 ''
 
+# 문자 인덱스
+
 a = "Life is too short, You need Python"
 
 print(a[0])
@@ -31,6 +33,8 @@ e = d[:1] + 'y' + d[2:]
 
 print(e)
 
+# 문자 포맷
+
 print("I eat %d apples" %3)
 print("I eat %s melons" % 'Four')
 
@@ -39,14 +43,13 @@ day = 'five'
 
 print("I ate %d apples. so I was sick for %s days." %(number , day))
 
-print("%10s" % 'Hi')
-print("%-10s" % 'Hi')
+print("%10s" % 'Hi') # 열칸 띄고 스트링
+print("%-10s" % 'Hi') # 뒤에서부터 열칸 띄고 스트링
 print("%0.4f" %3.248592)
 
 
-'''
 
-
+# 포맷팅 함수
 
 print("I eat {0} apples.".format(3))
 print("I eat {0} melons.".format("Four"))
@@ -65,3 +68,22 @@ name = 'Kimdohyeong'
 age = 26
 
 print(f'My name is {name} i am {age} years old')
+
+'''
+
+a = "hobby"
+print(a.count('b'))
+print(a.find('b')) # 찾는 문자열이 존재하지 않을경우 -1 반환
+print(a.index('b')) # 찾는 문자열이 존재하지 않을경우 오류발생
+# join
+print(",".join('abcd'))  
+print(','.join(['a' , 'b' , 'c' , 'd']))
+
+print(a.upper()) # 소문자 -> 대문자
+
+print(a.lower()) # 대문자 -> 소문자
+
+b = "Life is too short, You need too Python"
+print(b.split())  # 공백기준으로 쪼개기
+print(b.split(',')) # , 기준으로 쪼개기
+
