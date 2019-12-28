@@ -22,3 +22,20 @@ c = a[0:10]
 print(b)
 print(c)
 
+d = "Pithon"
+
+e = d[:1] + 'y' + d[2:] 
+
+print(e)
+
+print("I eat %d apples" %3)
+print("I eat %s melons" % 'Four')
+
+number = 10
+day = 'five'
+
+print("I ate %d apples. so I was sick for %s days." %(number , day))
+
+print("%10s" % 'Hi')
+print("%-10s" % 'Hi')
+print("%0.4f" %3.248592)
