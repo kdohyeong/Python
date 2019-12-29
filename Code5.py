@@ -94,4 +94,4 @@ while a < 10 :
 
 ## while 무한루프에 빠진 경우 Ctrl + c 버튼을 이용하여 빠져나간다.
 
-
+if & for
