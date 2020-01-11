@@ -13,7 +13,8 @@ def QuickSortA(arr):
     for j in range(len(arr)):
         count = j
         for i in range (0 , len(arr) -1):
-            Pivot = int(arr[i])
+            arr[i] = int(arr[i])
+            Pivot = arr[i]
             if Pivot >= int(arr[i+1]):
                 Temp1 = Pivot
                 arr[i] = int(arr[i+1])
