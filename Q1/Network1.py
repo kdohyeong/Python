@@ -1,7 +1,6 @@
 import sys
 
 
-
 ARRAY = sys.argv[4:]
 
 
