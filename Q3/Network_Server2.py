@@ -15,10 +15,19 @@ def run_server(port=4000):
         
         line = args.d +'/'+ msg.decode()
 
-        size = os.path.getsize("C:/Users/KDHyeong/Desktop/Python/Python/" + line)
-        print("file size : " , size)
+        if ".txt" in line :
+            GetFile = open("C:/Users/KDHyeong/Desktop/Python/Python/" + line , 'rt')
+            FileData = GetFile.read()
+            GetFile.close()
+            conn.sendall(FileData.encode())
+            
+        else :
+            GetFile = open("C:/Users/KDHyeong/Desktop/Python/Python/" + line , 'rb')
+            FileData = GetFile.read()
+            GetFile.close()
+            conn.sendall(FileData)
 
-        conn.sendall(str(size).encode())
+        print("Send to Client : " + msg.decode())
         conn.close()
         
 if __name__ == '__main__' :
