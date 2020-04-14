@@ -1,2 +1,2 @@
-## "Jump to Python" 을 통해 학습한 기본 Python 학습 및 소스코드
+## "Jump to Python" 을 통해 학습한 내용이 담겨있는 프로젝트 입니다.
 > https://wikidocs.net/book/1
